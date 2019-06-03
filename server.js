@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
@@ -19,5 +21,5 @@ io.on('connection', (socket) => {
 });
 
 http.listen(PORT, () => {
-    console.log('listening on 3000');
+    console.log('listening on ', PORT);
 });
